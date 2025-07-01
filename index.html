@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D로 펼쳐진 나의 이야기</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>3D로 펼쳐진 나의 이야기</h1>
+    <p class="subtitle">3D 복원 기술 더스터(DUSt3R)로 만든 우리의 소중한 순간을 전시합니다</p>
+  </header>
+
+  <!-- 카드 1 -->
+  <div class="container">
+    <div class="card-wrapper">
+      <div class="card">
+        <model-viewer
+          src="./assets/급식.glb"
+          alt="오늘의 급식"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="180deg 90deg 1.5m"
+        ></model-viewer>
+        <div class="info-overlay">
+          <h3>맛있겠다</h3>
+          <p class="artist">최목원</p>
+          <p class="description">명덕외고 시절 최애 급식</p>
+        </div>
+      </div>
+
+      <!-- 카드 2 -->
+      <div class="card">
+        <model-viewer
+          src="./assets/파티.glb"
+          alt="하얀 위로"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="180deg 90deg 1.5m"
+        ></model-viewer>
+        <div class="info-overlay">
+          <h3>우리 파티</h3>
+          <p class="artist">하현정</p>
+          <p class="description">울 파티 귀엽죠</p>
+        </div>
+      </div>
+
+
+      <!-- 카드 3 -->
+      <div class="card">
+        <model-viewer
+          src="./assets/옛날집.glb"
+          alt="하얀 위로"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="180deg 90deg 1.5m"
+        ></model-viewer>
+        <div class="info-overlay">
+          <h3>그리운 옛날 집</h3>
+          <p class="artist">김규진</p>
+          <p class="description">그 시절의 편안함이 느껴져 기분 좋아지는 옛날 집~</p>
+        </div>
+      </div>
+
+      <!-- 카드 4 -->
+      <div class="card">
+        <model-viewer
+          src="./assets/크리스마스.glb"
+          alt="하얀 위로"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="180deg 90deg 1.5m"
+        ></model-viewer>
+        <div class="info-overlay">
+          <h3>20191225</h3>
+          <p class="artist">임선영</p>
+          <p class="description">가장 기억에 남는~ 크리스마스 🤍 </p>
+        </div>
+      </div>
+
+      <!-- 카드 5 -->
+      <div class="card">
+        <model-viewer
+          src="./assets/태권도2.glb"
+          alt="하얀 위로"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          camera-orbit="180deg 90deg 1.5m"
+        ></model-viewer>
+        <div class="info-overlay">
+          <h3>파리 올림픽</h3>
+          <p class="artist">강효정</p>
+          <p class="description">작년 여름 파리 올림픽에서 태극기 흔들던 순간으로 돌아가고 싶어요...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
